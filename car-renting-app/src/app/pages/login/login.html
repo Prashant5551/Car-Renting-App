@@ -1,1 +1,20 @@
-<p>login works!</p>
+<div class="parent">
+    <div class="login-card">
+        <i class="fa fa-user-circle login-icon"></i>
+        <h3>Admin Login</h3>
+        <form>
+            <div class="mb-3 input-group">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+                <input type="text" class="form-control" [(ngModel)]="loginObj.username" name="username" placeholder="Username" required />
+            </div>
+
+            <div class="mb-3 input-group">
+                <span class="input-group-text"><i class="fa fa-lock"></i></span>
+                <input type="password" class="form-control" [(ngModel)]="loginObj.password" name="password" placeholder="Password" required />
+            </div>
+
+            <button type="button" class="btn btn-login mt-2" (click)="onLogin()">Login</button>
+            <a href="#" class="forgot-link">Forgot Password?</a>
+        </form>
+    </div>
+</div>
